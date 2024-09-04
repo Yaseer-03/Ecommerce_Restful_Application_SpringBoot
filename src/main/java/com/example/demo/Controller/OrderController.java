@@ -8,11 +8,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.HttpClientErrorException;
-
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.concurrent.locks.ReentrantLock;
 
 @RestController
 @RequestMapping("/orders")

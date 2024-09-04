@@ -6,7 +6,6 @@ import com.example.demo.Entity.Product;
 import com.example.demo.Entity.User;
 import com.example.demo.Repository.CartRepository;
 import com.example.demo.Repository.ProductRepository;
-import com.example.demo.Repository.UserRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.AccessDeniedException;
@@ -23,9 +22,6 @@ public class CartService {
 
     @Autowired
     private ProductRepository productRepository;
-
-    @Autowired
-    private UserRepository userRepository;
 
     @Autowired
     private AuthenticatingCurrentUser authenticatingCurrentUser;

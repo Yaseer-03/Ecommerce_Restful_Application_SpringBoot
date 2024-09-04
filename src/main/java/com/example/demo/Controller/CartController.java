@@ -1,9 +1,7 @@
 package com.example.demo.Controller;
 
 import com.example.demo.DTO.CartDTO;
-import com.example.demo.Entity.Cart;
 import com.example.demo.Service.CartService;
-import org.apache.catalina.connector.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -11,7 +11,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import com.example.demo.customclasses.Validations;
-
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
