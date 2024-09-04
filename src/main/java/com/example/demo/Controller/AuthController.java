@@ -1,7 +1,5 @@
 package com.example.demo.Controller;
-
 import com.example.demo.Entity.User;
-import com.example.demo.Repository.UserRepository;
 import com.example.demo.Security.JwtUtils;
 import com.example.demo.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,9 +21,6 @@ public class AuthController {
     private UserService userService;
 
     @Autowired
-    private UserRepository userRepository;
-
-    @Autowired
     private JwtUtils jwtUtils;
 
     // End point to add the user
@@ -42,9 +37,7 @@ public class AuthController {
 
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtUtils.generateJwtToken(authentication);
-
         UserDetails userDetails = (UserDetails) authentication.getPrincipal();
-
         return jwt;
     }
 }
